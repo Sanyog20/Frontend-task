@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="countdown1.css">
+    <title>New Year Countdown</title>
+</head>
+    <body >
+        <h1 style="color: white;" >Countdown to New Year 31st December, 2021</h1>
+        <h1></h1>
+        <table class="Countdowncontainer">
+            <tr>
+                <td colspan="5" class="info">New Year, 2021<td>
+            </tr>
+            <tr class="info1">
+                <td id="days">98</td>
+                <td id="hours">12</td>
+                <td id="minutes">44</td>
+                <td id="seconds">00</td>
+            </tr>
+            <tr>
+                <td>Days</td>
+                <td>Hours</td>
+                <td>Minutes</td>
+                <td>Seconds</td>
+            </tr>
+
+        </table>
+        <script type="text/javascript">
+            function countdown()
+            {
+                var now= new Date();
+                var eventDate= new Date(2021,11,31);
+                var currentTime=now.getTime();
+                var eventTime= eventDate.getTime();
+
+                var remainingTime=eventTime-currentTime;
+                var sec= Math.floor(remainingTime/1000);
+                var min=Math.floor(sec/60);
+                var hr=Math.floor(min/60);
+                var day=Math.floor(hr/24);
+
+                hr%=24;
+                min%=60;
+                sec%=60;
+                
+                hr=(hr<10)? "0" +hr:hr;
+                min=(min<10)? "0" +min:min;
+                sec=(sec<10)? "0" +sec:sec;
+
+
+                document.getElementById("days").textContent=day;
+                document.getElementById("hours").textContent=hr;
+                document.getElementById("minutes").textContent=min;
+                document.getElementById("seconds").textContent=sec;
+
+                setTimeout(countdown, 1000);
+            } 
+            countdown();
+        </script>
+        <h2 style="color: rgb(255, 255, 255);">May Every Single New Year DayMake you glad always and sparkle with positivity!</h2>
+    </body>
+</html>

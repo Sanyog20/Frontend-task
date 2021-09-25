@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.right{
+    padding: 5px 20px 15px 20px;
+    border: 1px;
+    border-radius: 4px;
+    text-align: center;
+    align-self: center;
+    right: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    width: 30%;
+    padding: 12px;
+    border: 1px;
+    margin: 10px;
+    text-align: left;
+    border: 1px;
+    border-radius: 20px;
+}
+
+input[type="submit"]{
+    text-align: center;
+    color: green;
+    width: 20%;
+    padding: 12px;
+    border: 1px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#remember{
+    border: 1px;
+    border-radius: 5px;
+    padding: 12px;
+    
+}
+
+#fname, #lname{
+    width: 14%;
+}
+
+
+svg{
+    padding: 5px;
+}

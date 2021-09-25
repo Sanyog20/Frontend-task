@@ -1,0 +1,172 @@
+
+ *{
+     margin-top: 20px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    /* padding: 8px; */
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #274046, #E6DADA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.right{
+    padding: 5px 20px 15px 20px;
+    border: 1px;
+    border-radius: 4px;
+    text-align: center;
+    align-self: center;
+    right: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    width: 280px;
+    padding: 12px;
+    border: 1px;
+    margin: 8px;
+    text-align: left;
+    border: 1px;
+    border-radius: 20px;
+}
+#fname
+{
+    width: 200px;
+}
+input[type="submit"]{
+    text-align: center;
+    color: green;
+    width: 200px;
+    padding: 10px;
+    border: 1px;
+    border-radius: 20px;
+    font-size: 22px;
+    
+}
+
+#remember{
+    border: 1px;
+    border-radius: 5px;
+    padding: 1px;
+    
+}
+
+.title
+{
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+svg{
+    padding: 5px;
+}
+
+/* ===== MEDIA QUERIES =====*/
+@media screen and (min-width: 720px)
+{
+    input[type="text"],
+    input[type="password"],
+    input[type="email"]
+    {
+        width: 500px;
+        /* margin: 20px; */
+        
+    }
+    
+
+}
+
+
+
+
+#sandy
+{
+    width: 230px;
+}
+
+
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px)
+{
+
+}
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) 
+{
+
+}
+/*tablets, ipads (portrait)*/
+@media (min-width:438px) and (max-width: 766px)
+{
+    #sandy
+    {
+        width: 320px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"]
+    {
+        width: 320px;
+        /* margin: 20px; */
+        
+    }
+    .title
+    {
+        font-size: 30px;
+    }
+    
+}
+
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 480px)
+{
+    .title
+    {
+        font-size: 28px;
+    }
+    #sandy
+    {
+        width: 320px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"]
+    {
+        width: 320px;
+        /* margin: 20px; */
+        
+    }
+}
+
+@media (min-width: 270px) and (max-width: 320px)
+{
+    .title
+    {
+        font-size: 25px;
+    }
+    #sandy
+    {
+        width: 230px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"]
+    {
+        width: 230px;
+        /* margin: 20px; */
+        
+    }
+    body
+    {
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+}
